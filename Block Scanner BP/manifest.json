@@ -1,0 +1,43 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Block Scanner",
+		"description": "Block Scanner",
+		"uuid": "b36b0a96-d75e-447c-94b8-ffafcd6e8e8f",
+		"version": [
+			1,
+			0,
+			0
+		],
+		"min_engine_version": [
+			1,
+			20,
+			0
+		]
+	},
+	"modules": [
+	  {
+		"type": "data",
+		"uuid": "92a3bbd6-76d0-4b13-82c7-41607e9fa2ff",
+		"version": [1, 0, 0]
+	  },
+	  {
+		"type": "script",
+		"language": "javascript",
+		"uuid": "9f515e26-509e-4a04-b69a-5bc97d0dee35",
+		"entry": "scripts/index.js",
+		"version": [1, 0, 0]
+	  }
+	],
+	"capabilities": ["script_eval"],
+	"dependencies": [
+		{
+			"module_name": "@minecraft/server",
+			"version": "2.2.0"
+		},
+		{
+			"module_name": "@minecraft/server-ui",
+			"version": "2.0.0"
+		}
+	]
+}
